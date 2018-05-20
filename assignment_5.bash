@@ -9,6 +9,12 @@ function dispVars() {
 		echo $i
 	done
 }
+function dispVar() {
+	for i in $@;
+	do
+		bash -c "echo \$i"
+	done
+}
 echo "Running assignment 5"
 for i in $@;
 do
@@ -21,7 +27,5 @@ do
 		echo "Flag -p, good choice"
 	fi
 done
-echo $VAR1
-echo $VAR2
-echo $VAR3
 dispVars $VAR1 $VAR2 $VAR3
+dispVar $VAR3 $VAR2 $VAR1
