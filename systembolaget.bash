@@ -1,15 +1,11 @@
 #!/bin/bash
-year=$(date +%y)
-day=$(date +%d)
-month=$(date +%m)
-LegalDays=20*365
-numbers='^[0-9]+$'
-echo -n "Welcome to systembolaget. Enter your birthdate (6 digits): "
-read -n 6 -t 30 BIRTH
+echo -n "Welcome to systembolaget. Enter your birthdate (YYYY-MM-DD) digits): "
+read -n 10 -t 30 BIRTHDATE
 #check if input is valid by bitwise checking the read input. All must be digits to be a valid option
-while ( ! [[ $BIRTH =~ $numbers ]] ) ; do
+while ! date -d "$(BIRTHDATE)" + ; do
+	clear
 	printf "\n"
-	read -n 6 -p "Retry: " -t 30 BIRTH
+	read -n 10 -p "Not a valid date, try again: " -t 30 BIRTHDATE
 done
 	
 if (( "$year" > "$LegalDays" )); then
