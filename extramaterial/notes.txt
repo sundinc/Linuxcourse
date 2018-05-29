@@ -81,3 +81,62 @@ Awk '{print $'$Column'}'	#Kalla på awk och skriv ut kolumn Column. Notera fnutt
 
 
 Awk har samma aritmetiska operatorer som c.
+
+
+Lecture 1:
+Date					Outputs the current date
+Cal 1 2 1999				Shows  the calendar (day ) of 1 februari 1999
+mv file newfile				Renames the file to newfile
+mv file folder				Moves the file to the folder
+cp file folder				Copy the file to folder
+cp file file2				Copy the file to file2
+wget html adress			Downloads the specified file
+find . -type f -exec cat {} \; > file	Finds all files in subfolders and outputs their content to the file new
+sort -h file > file_sorted	Sorts content in file on human readable numbers (-h) and prints it to file sorted.
+
+Find					Use to find files or directories. Will search for files. Find <path> <pattern>
+Locate					Use to find indexed file. Does not work on directories.
+
+
+Repetition contructs
+	•  for… do …done
+		○ For NAME [in LIST] ; fo COMMANDS; done
+		○ NAME is the name of the variable that contains the successive elemetns from the list
+		○ LIST is the list of alternative; can be specified literally or generated with brace expression, filename expansion, command substituition etc.
+	• While.. Do … done
+		○ Whie CONTROL-COMMAND; do CONSEQUENT-COMMANDS; done
+		○ CONTROL-COMMAND can be any command.
+	• Until… do…. Done
+	• Select… do… done
+		○ This is almost the same as a for loop, but the list alternatives are printered as numbered alternatives
+		○ Seöect WORD [in LIST]; do REPECTIVE-COMMAND; done
+		○ Is used to generate menues.
+	• Break/continue
+		○ Break exits the repetive construct before its normal ending
+		○ Continue steps to the next iterartion in the repetitive construct
+
+Positional arguments in repetitive constructs
+	• if LIST is not specified it is by default the list of positional arguments $@
+	• Shift N builtin command removes first N positional arguments
+
+Functions
+	• Functions can be used to group commands
+	• Function FUNCTIONNAME{COMMANDS;}
+	• Or FUNCTIONAME () { COMMANDS;}
+		○ Note the spaces around the curly braces
+	• Functions in bash do not have a return value
+
+Variables, positional parameters in function, and exit status
+	• Local variablename: this creates a variable local to the function
+	• The positional parameters $1, $2 are the arguments to function (not arguments to the script containing the script)
+	• The function can be quit with return
+	• Return x can also be used to return an exit status to the calling process.
+
+Constants
+	• Constants = read-only variables
+	• Readonly OPTION VARIABLE(s)
+Arrays
+	• You can use arrays in Bash; indices are zero based. ARRAY[INDEXNR]
+
+
+	
