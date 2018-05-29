@@ -1,0 +1,9 @@
+-rw-r--r-- 1 root root  1563 Nov 10  2015 debian-logo.png
+-rw-r--r-- 1 root root  2253 Jul 28  2016 language-selector.png
+-rw-r--r-- 1 root root   842 Sep 19  2012 pstree16.xpm
+-rw-r--r-- 1 root root  1674 Sep 19  2012 pstree32.xpm
+-rw-r--r-- 1 root root  7286 Nov 23  2013 python3.5.xpm
+lrwxrwxrwx 1 root root    13 Mar 23  2016 python3.xpm -> python3.5.xpm
+-rw-r--r-- 1 root root   490 Nov 24  2016 vim-16.xpm
+-rw-r--r-- 1 root root  1322 Nov 24  2016 vim-32.xpm
+-rw-r--r-- 1 root root  2666 Nov 24  2016 vim-48.xpm
