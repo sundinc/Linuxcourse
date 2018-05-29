@@ -1,0 +1,7 @@
+http://www.tutorialspoint.com/unix_commands/bash.htm          # Olika kommandon
+http://www.tutorialspoint.com/listtutorials/linux/shells/1    # Linux shell
+                                                              # script tutorials
+https://www.tutorialspoint.com/unix/index.htm                 # Unix/Linux
+                                                              # tutorial
+https://www.tutorialspoint.com/awk/index.htm                  # AWK
+https://www.tutorialspoint.com/sed/sed_overview.htm           # SED
