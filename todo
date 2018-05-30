@@ -1,0 +1,11 @@
+DONE Make the file accept options -p -u -d -f -h -q
+DONE Create a menusystem with options -p -u -d -f -h -q
+DONE Write templates for each option
+4. write option p
+DONE write option u
+DONE write option d
+DONE write option f
+DONE. write option h
+DONE  write a trap
+10. write SIGINT trap
+DONE write SIGQUIT option
